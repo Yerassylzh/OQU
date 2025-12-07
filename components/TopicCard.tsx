@@ -26,7 +26,7 @@ export default function TopicCard({ title, description, badgeState, score, onCli
       <div className="ml-6">
         {badgeState === 'not-started' && (
           <div className="px-4 py-2 bg-gray-100 text-gray-600 rounded-lg text-sm font-medium">
-            Not Started
+            Не начато
           </div>
         )}
 
@@ -40,7 +40,7 @@ export default function TopicCard({ title, description, badgeState, score, onCli
         {badgeState === 'needs-revision' && score !== null && (
           <div className="px-4 py-2 bg-red-100 text-red-700 rounded-lg text-sm font-semibold
                           border-2 border-red-300 animate-pulse">
-            ⚠ {score}% - Revise!
+            ⚠ {score}% - Повторить!
           </div>
         )}
       </div>
